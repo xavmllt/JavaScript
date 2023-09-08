@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 3 JS</title>
+    <style>
+        .red-text{
+            color: red;
+        }
+        .green-text{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Exercice 1 : -->
+    <script>
+        var ht = Number(prompt("Please entrez un prix hors taxe : "));
+        var ttc = ht + (ht*20/100);
+        alert("Le prix TTC est de " + ttc);
+    </script>
+
+    <!-- Exercice 2  -->
+    <script>
+        var ht1 = Number(prompt("Please entrez un prix hors taxe : "));
+        var tva = Number(prompt("Choississez un taux pour la tva : "))
+        var ttc1 = ht1 + (ht1*tva)/100;
+        alert("Le prix TTC est de " + ttc1);
+    </script>
+
+    <!-- Exercice 3 -->
+    <script>
+        var ht2 = Number(prompt("Please entrez un prix hors taxe : "));
+        var tva1 = Number(prompt("Choississez un taux pour la tva : "))
+        var ttc2 = ht2 + (ht2*tva1)/100;
+    
+        if(ttc2>100){
+            document.write("<p class='red-text'>Le prix est supérieur à 100$</p>");
+        }else{
+            document.write("<p class='green-text'>Le prix est inférieur à 100$</p>");
+        }
+
+        
+    </script>
+</body>
+</html>
