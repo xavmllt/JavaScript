@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP JS 10</title>
+</head>
+<body>
+    <!-- Question 1 : 
+    <script>
+        for(i = 20; i >= 0; i = i - 2){
+            console.log(i);
+        }
+    </script> -->
+
+    <!-- Question 2 :  -->
+   <script>
+    function isPrime(num) {
+    if (num <= 1) return false;
+    if (num <= 3) return true;
+
+    if (num % 2 === 0 || num % 3 === 0) return false;
+
+    for (let i = 5; i * i <= num; i += 6) {
+        if (num % i === 0 || num % (i + 2) === 0) return false;
+    }
+
+    return true;
+}
+
+function findPrimeNumbers() {
+    for (let i = 0; i <= 100; i++) {
+        if (isPrime(i)) {
+            console.log(i);
+        }
+    }
+}
+
+findPrimeNumbers();
+
+   </script>
+
+    <!-- Question 4 :  -->
+    <!-- <script>
+        let k = parseInt(prompt("Entrez une valeur pour k"));
+
+    </script> -->
+</body>
+</html>

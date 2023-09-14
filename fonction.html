@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les fonction en JS</title>
+</head>
+<body>
+    <script>
+        function afficher(){
+            alert("Bonjour");
+        }
+        afficher();
+        
+        function direBonjour(nom){
+            alert("Bonjour " + nom);
+        }
+        direBonjour("Anissa");
+
+        function identite(nom, age){
+            alert("Bonjour " + nom + " tu as " + age + " ans.");
+        }
+        identite("Anissa", 20);
+
+        function demandeIdentite(nom, age){
+            nom = prompt("Quelle est votre nom : ");
+            age = prompt("Quelle est votre age : ");
+            alert("Bonjour " + nom + " tu as " + age + " ans.");
+        }
+        demandeIdentite();
+
+        function somme(a, b){
+            return a + b;
+        }
+        somme(12, 12);
+
+        let maSomme = somme(12, 12);
+        console.log(maSomme);
+
+        let operation = maSomme + 10;
+        console.log(operation);
+        console.log(typeof(operation));
+
+        let maSomme2 = somme(operation, 14);
+        console.log("ma somme2 : " + maSomme2);
+    </script>
+</body>
+</html>

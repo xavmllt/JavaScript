@@ -35,12 +35,13 @@
         var tva1 = Number(prompt("Choississez un taux pour la tva : "))
         var ttc2 = ht2 + (ht2*tva1)/100;
     
-        if(ttc2>100){
-            document.write("<p class='red-text'>Le prix est supérieur à 100$</p>");
-        }else{
-            document.write("<p class='green-text'>Le prix est inférieur à 100$</p>");
-        }
+        // if(ttc2>100){
+        //     document.write("<p class='red-text'>Le prix est supérieur à 100$</p>");
+        // }else{
+        //     document.write("<p class='green-text'>Le prix est inférieur à 100$</p>");
+        // }
 
+        document.write(ttc>100 ? "<p class='red-text'>Le prix est supérieur à 100$</p>" : "<p class='green-text'>Le prix est inférieur à 100$</p>" );
         
     </script>
 </body>

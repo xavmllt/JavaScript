@@ -6,12 +6,85 @@
     <title>Aire du rectangle</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         alert("Nous allons calculer l'air d'un rectangle")
         var longueur = Number(prompt("Rentrez la valeur de la longueur du rectangle : "))
         var largeur = Number(prompt("Rentrez la valeur de la largeur du rectangle : "))
         var air = longueur*largeur
         alert("L'air du rectangle est de " + air + "cm2")
+    </script> -->
+
+    <script>
+        var nom;
+        nom = "Jean";
+        var prenom = "Pierre"
+
+        let prix = 12.4;
+        console.log("Nom : " + nom + " Prénom : " + prenom + " mon prix : " + prix);
+
+        let monTableau = [];
+        monTableau[0] = "Lundi";
+        monTableau[1] = "Mardi";
+        console.log(monTableau);
+
+        let monTab = [1, "Jean", 28, "Pierre", 1924];
+        console.table(monTab);
+
+        let monTab2 = new Array("mercredi", "jeudi");
+        monTab2[2] = "lundi";
+        console.log(monTab2.length);
+
+        var age = prompt("Donnez votre age : ");
+        // // console.log(age);
+
+        // if(age < 18){
+        //     alert("Mineur")
+        // }else{
+        //     alert("MAjeur")
+        // }
+
+        // let ages = Number(prompt("Entrez votre age : "));
+
+        // switch(ages){
+        //     case 0:
+        //         console.log("Mineur")
+        //         break;
+        //     case 10:
+        //         console.log("Mineur")
+        //         break;
+        //     case 18:
+        //         console.log("Majeur")
+        //         break;
+        //     case 25:
+        //         console.log("Majeur")
+        //         break;
+        //     default:
+        //         console.log("Le chiffre n'existe pas")
+        // }
+
+        console.log(age >= 18 ? "Majeur" : "Mineur");
+
+        // for(i = 0; i <= 10; i++){
+        //     document.write("J'aime la france");
+        // }
+
+
+        // var i = 0;
+        // while(i<=10){
+        //     console.log("J'aime les chats")
+        //     i++;
+        // }
+            
+        // for(i = 0; i <= monTab.length; i++){
+        //     console.log(monTab[i]);
+        // }
+
+        let i = 0;
+        while(i <= monTab.length){
+            console.log(monTab[i]);
+            i++;
+        }
+
     </script>
 </body>
 </html>
