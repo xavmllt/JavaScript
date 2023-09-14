@@ -14,8 +14,13 @@
     </style>
 </head>
 <body onload="alert('Page chargée. ')">
+    <textarea onchange="alert('Qu\ as-tu écris ?')"></textarea>
+    <input type="submit" onclick="f_submit()" /> <br />
     <input type="button" value="Bouton 1" onclick="f()" /><br />
-    <input type="button" value="Bouton 2" onmouseover="g()" /><br />
+    <input type="button" value="Popup bouton" onclick="popup()" /><br />
+    <input type="button" value="Red bouton" onclick="j()" /><br />
+    <input type="button" value="Retarde bouton" onclick="i()" /><br />
+    <input type="button" value="Survol" onmouseover="g()" /><br />
     <input type="button" value="Bouton 3" ondblclick="h()" /><br />
     
     <script>
@@ -27,6 +32,21 @@
         }
         function h(){
             alert("Vous avez cliqué 2 fois sur le bouton 3. ")
+        }
+        function j() {
+            document.body.style.background="red";
+        }
+        function popup() {
+            window.open("https://www.google.fr");
+        }
+        function retarde () {
+            alert("Reatrder l'exécution de la fonction de 2 seconde");
+        }
+        function i() {
+            setTimeout("retarde()", 2000);
+        }
+        function f_submit() {
+            alert("Vous avez soumis le bouton");
         }
     </script>
 </body>
