@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calAire.css">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div id="conteneur">
+        
+        <div id="entete">
+            <marquee behavior="scroll" direction="right">Choissisez 1 valeur</marquee>
+        </div>
+
+    <form action="">
+        <div id="ligne1">
+        <input id="nombreInput" type="button" value="1" onclick="un(this.value)">
+        <input type="button" value="2" onclick="un(this.value)">
+        <input type="button" value="3">
+        </div>
+
+        <div id="ligne2">
+        <input type="button" value="4">
+        <input type="button" value="5">
+        <input type="button" value="6">
+        </div>
+
+        <div id="ligne3">
+        <input type="button" value="7">
+        <input type="button" value="8">
+        <input type="button" value="9">
+        </div>
+
+        <div id="egal">
+        <input id="egale" type="button">
+        </div>
+    </form>
+
+        <div id="bas">
+            <marquee behavior="scroll" direction="left">Aire d'un carré</marquee>
+        </div>
+    </div>
+
+    <script src="calcul1.js"></script>
+</body>
+</html>
