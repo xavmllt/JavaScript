@@ -26,13 +26,11 @@
 
     <!-- Question 3 : -->
     <script>
-        function increment() {
-            let b = 0;
-            while(b<10){
-                b++;
-                console.log(b);
-        }
+        function increment(a) {
+            return a++;
     }
+    console.log(increment(1));
+    console.log(increment(4));
     </script>
 
     <!-- Question 4 : -->
@@ -50,6 +48,49 @@
             return a.split("").reverse().join();
         }
         console.log(inverse("Hello"));
+    </script>
+
+    <!-- Question 6 : -->
+    <script>
+        function higher(a, b, c) {
+            if(a > b && b > c){
+                return a;
+            }else if(b > a && a > c){
+                return b;
+            }else{
+                return c
+            }
+        }
+        console.log(higher(5, 9, 1));
+        console.log(higher(2, 3, 10));
+    </script>
+
+    <!-- Question 7 :  -->
+    <script>
+        let maTab = new Array();
+        function tab (maTab) {
+            return maTab.shift();
+        }
+        console.log(tab([1, 2, 3]));
+        console.log(tab([50, 60, 70]));
+    </script>
+
+    <!-- Question 8 : -->
+    <script>
+        function code() {
+            return a = window.location.href;
+        }
+        console.log(code());
+    </script>
+
+    <!-- Question 9 :  -->
+    <script>
+        function reste(a, b) {
+            return a%b;
+        }
+        console.log(reste(1, 3));
+        console.log(reste(2, 4));
+        console.log(reste(3, 3));
     </script>
 </body>
 </html>

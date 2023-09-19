@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="geoMetrie.css">
+    <title>TP JS 17</title>
+</head>
+<body>
+
+    <!-- Exo 1 : -->
+    <script>
+        function masseCorpo(a, b, c, age) {
+            var age = parseInt(prompt("Rentrez votre âge : " ));
+            var a = Number(prompt("Rentrez votre poids : " ));
+            var b = Number(prompt("Rentrez votre taille en cm : " ));
+            // Convertir cm en m
+            var c = b/100;
+            if (age >= 18 && age <= 65){
+                return a/(c*c);
+            }else{
+                alert("Vous n'avez pas l'âge requis pour calculer votre IMC")
+            }
+        }
+        console.log(masseCorpo());
+    </script>
+
+
+    <!-- Exo 2 : -->
+
+
+<div id="conteneur">
+    <label for="formule">Choissisez une formule géométrique : </label> 
+    <select onchange="formuleAire()" name="formule" id="formule">
+        <optgroup label="Formule d'aire">
+            <option value="">-- Choisir une aire pour trouver la figure correspondant -- </option>
+        <option value="carre">Aire = c x c</option>
+        <option value="rectangle">Aire = L x l</option>
+        <option value="parallelogramme">Aire = b x h</option>
+        <option value="losange">Aire = (D x d)/2 </option>
+        <option value="trapeze">Aire = ((b + B) x h)/2</option>
+        <option value="cercle">Aire = π x r x r</option>
+        </optgroup>
+    </select>
+</div>
+
+
+<script src="geoMetrie.js"></script>
+</body>
+</html>
