@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TP_JS_18_Bonjour.css">
+    <title>TP_JS_18</title>
+</head>
+<body>
+    <!-- Exercice 1 : -->
+    <div id="conteneur">
+        <label for="titre">Bouton Magique</label>
+        <input type="button" value="" id="bouton" onclick="bonjour()">
+        <input type="text" value="" id="txt">
+    </div>
+
+    <script>
+        function bonjour() {
+            var texte = "";
+            for(i=0; i < 100; i++){
+            texte += "Bonjour"
+        }
+            document.getElementById("txt").value=texte;
+        }
+    </script>
+</body>
+</html>

@@ -1,62 +1,44 @@
 *{
-    margin: O;
-    padding: O;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(101,101,170,1) 62%, rgba(0,212,255,1) 100%);
-}
-
-#formu{
-    border: 2px solid rgb(212, 191, 191);
-    border-radius: 10px;
     display: flex;
-    justify-content: center; 
-    margin-top: 220px;
-    height: 500px;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-    background: radial-gradient(at center, rgb(223, 127, 127), lightblue);
-    box-shadow: 2px 3px 1px 4px;
+    justify-content: center;
+    background-image: linear-gradient(
+  45deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(274deg 82% 23%) 11%,
+  hsl(290deg 55% 29%) 22%,
+  hsl(307deg 39% 37%) 33%,
+  hsl(319deg 30% 47%) 44%,
+  hsl(330deg 30% 57%) 56%,
+  hsl(339deg 32% 66%) 67%,
+  hsl(346deg 33% 75%) 78%,
+  hsl(353deg 31% 83%) 89%,
+  hsl(0deg 16% 92%) 100%
+);
 }
 
-legend{
-    font-size: 30px;
+#conteneur{
+    border: 2px solid rgb(202, 72, 204);
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    width: 30%;
+    margin-top: 100px;
+    align-items: center;
+}
+
+a{
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+
+a:hover{
     color: white;
-    margin-left: 80px;
+    background-color: blueviolet;
 }
-
-.ligne{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 25px;
-    padding: 5px;
-}
-
-#valid{
-    height: 40px;
-    border-radius: 10px;
-    background-color: green;
-    margin-top: 20px;
-    width: 150px;
-    margin-left: 78px;
-}
-
-#ligne5{
-    margin-top: 40px;
-}
-
-#imctxt{
-    height: 45px;
-    text-align: center;
-    font-size: 25px;
-}
-
-input{
-    text-align: center;
-}
-

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: O;
+}
+
+body{
+    background: linear-gradient(to left, lightblue, black);
+    height: 400px;
+}
+
+#conteneur{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 800px;
+    padding: 50px;
+    width: 100%;
+    color: white ;
+    flex-wrap: wrap;
+}
+
+#bouton{
+    border-radius: 10px;
+    width: 25px;
+}
+
+#txt{
+    height: 300px;
+    font-size: 20px;
+}
