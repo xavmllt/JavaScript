@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="test.css"> -->
-    <title>Fenetre</title>
+    <title>Fizz</title>
 </head>
 <body>
     <script>
         let i = 0;
-        function nombre(){
-        while(i<=100){
-            verif();
-            i++;
-        }
-    }
-    console.log(nombre());
-
-
-    function verif() {
-        if(i%3==0){
-                i += "Fizz";
-            }else if(i%5==0){
-                i += "Buzz"
-            }else{
-                console.log(i)
+        function nombre() {
+            while(i<=100){
+                i++;
+                verif();    
             }
-    }
-    
+        }
+        nombre();
+
+
+        function verif() {
+         if(i%3===0 && i%15===0){
+                console.log("FizzBuzz");
+             }else if(i%5===0){
+                console.log("Buzz");
+             }else if(i%3===0){
+                console.log("Fizz")
+             }else{
+              console.log(i)
+             }
+            }
     </script>
 </body>
 </html>
