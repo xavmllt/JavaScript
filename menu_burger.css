@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* enlever les puces de la liste */
+li{
+    list-style: none;
+}
+
+a, a:visited{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase; /* transformer en majuscule le texte */
+}
+
+a:hover{
+    color: white; /*couleur blanche au survol du lien */
+}
+
+nav{
+    background: skyblue;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+nav ul{
+    display: flex; /*mettre cote à cote les ul */
+    justify-content: flex-end;
+    gap: 15px; /* créer un espacement entre les items (enfants) */
+}
+
+#icons{
+    cursor: pointer; /* donne une forme particuliere au pointeur */
+    display: none;
+}
+
+@media screen and (max-width : 650px){
+    #icons{
+        display: block;
+    }
+    #icons:before{
+        content: "\2630"; /* mettre un slash inverse */
+    }
+    /* faire disparaitre les ul */
+    nav ul{
+        position: fixed;
+        left: -100%;
+        top: 5%;
+        flex-direction: column;
+        background: skyblue;
+        width: 100%;
+        text-align: center;
+        transition: .2s;
+    }
+    nav li{
+        padding: 3px 0;
+    }
+    nav li:hover{
+        background: fixed;
+    }
+    nav:active ul{
+        left: 0;
+    }
+}
+
+
